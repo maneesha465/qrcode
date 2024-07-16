@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Display from './components/display';
 
-function App() {
+const App = () => {
+  const Name = "Maneesha MA"; 
+  const Biodata = "Post graduated from Calicut University.Aspiring full stack web developer";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Display Name={Name}  Biodata={Biodata} />
     </div>
   );
-}
+};
 
 export default App;
